@@ -13,23 +13,21 @@ body {
 
 header {
   background-color: black;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px;
 }
 
 .Site-Container {
   width: 960px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .logo {
   height: 1.5rem;
   margin-left: 0.5rem;
   margin-right: 1rem;
+  padding-bottom: 0.66rem;
+  padding-top: 0.66rem;
 }
 
 .Company {
@@ -41,9 +39,8 @@ header {
 .name {
   text-transform: uppercase;
   color: white;
-  text-align: center;
+  font-size: 1rem;
 }
-
 
 /* New Arrival */
 
@@ -51,11 +48,10 @@ header {
   width: 100%;
   height: 25rem;
   background-image: url("../images/moto.jpeg");
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
-.Text {
+.New-Arrival {
   background-color: black;
   color: white;
   position: relative;
@@ -86,18 +82,13 @@ nav {
   background-color: firebrick;
 }
 
-.links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.Menu {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
 li {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: inline;
 }
 
@@ -108,7 +99,35 @@ a:link {
 
 /* Catalogue */
 
+.Catalogue {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  top: 3rem;
+  position: relative;
+}
 
+.Item {
+  width: 30%;
+  border: 4px solid black;
+}
+
+.Product {
+  width: 9rem;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+p {
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: auto;
+  text-align: center;
+}
 
 /* Location */
 /* Hours */
