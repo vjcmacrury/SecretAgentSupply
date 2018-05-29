@@ -1,0 +1,47 @@
+/* Universal Styles*/
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+/* Header */
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.logo {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.Company {
+  width: 960px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+
+.name {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+/* New Arrival */
+/* Navigation */
+/* Catalogue */
+/* Location */
+/* Hours */
+/* Footer */
