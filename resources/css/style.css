@@ -21,8 +21,8 @@ body {
 .Push {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   top: 3rem;
   position: relative;
 }
@@ -74,7 +74,7 @@ header {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  flex-shrink: 0;
+
 }
 
 h3 {
@@ -141,8 +141,8 @@ p {
   position: relative;
   margin-top: 3rem;
   display: flex;
-  align-items: flex-end;
-  margin-left: 35px;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 .Contact p {
@@ -158,3 +158,117 @@ footer {
   margin-top: 4rem;
   height: 5rem;
 }
+
+/* Media Query - Desktop */
+
+@media only screen and (min-width: 1024px) {
+  .Small-Nav {
+    display: none;
+  }
+
+  .Mobile {
+    display: none;
+  }
+}
+
+/* Media Query - Tablet */
+
+@media only screen and (max-width: 1024px), (orientation: portrait) {
+  .Mobile {
+    display: none;
+  }
+
+  .name {
+    display: inline-flex;
+  }
+
+  .Site-Container {
+    width: 100%;
+  }
+
+  .Item {
+    width: 47%;
+    overflow: hidden;
+  }
+
+  .Menu .Site-Container {
+    display: none;
+    height: 100%;
+    }
+
+  .Small-Nav {
+    display: block;
+    text-align: center;
+  }
+
+  .Disappear {
+    display: none;
+  }
+
+  .Contact {
+    width: 35%;
+    text-align: left;
+  }
+
+/* Media Query - Mobile */
+
+@media only screen and (max-width: 470px) {
+
+  .Feature {
+    height: 15rem;
+  }
+
+  .New-Arrival {
+    width: 100%;
+    overflow: hidden;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+
+  h3 {
+    font-size: 0.77rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .Site-Container {
+    width: 100%;
+  }
+
+  .Item {
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+   }
+
+  .Disappear2,
+  .Contact {
+    display: none;
+  }
+
+  .Mobile {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    top: 5rem;
+    padding-top: 0.5rem;
+  }
+
+  .Small-Nav {
+    position: relative;
+    top: 10px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    display: block;
+    text-align: center;
+  }
+
+  .Copyright {
+    margin: auto;
+  }
