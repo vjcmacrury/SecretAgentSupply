@@ -9,6 +9,15 @@ body {
   width: 100%;
 }
 
+.Push {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  top: 3rem;
+  position: relative;
+}
+
 /* Header */
 
 header {
@@ -99,15 +108,6 @@ a:link {
 
 /* Catalogue */
 
-.Catalogue {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  top: 3rem;
-  position: relative;
-}
-
 .Item {
   width: 30%;
   border: 4px solid black;
@@ -134,6 +134,22 @@ p {
   width: 100%;
 }
 
-/* Location */
-/* Hours */
+/* Location and Hours */
+
+.Contact {
+  width: 35%;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.Contact p {
+  text-align: left;
+  padding: 1rem 0 1rem 2rem;
+}
+
 /* Footer */
+
+.Copyright {
+  position: relative;
+  top: 10rem;
+}
